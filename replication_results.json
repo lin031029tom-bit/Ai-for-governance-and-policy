@@ -1,0 +1,106 @@
+{
+  "dataset_summary": {
+    "rows_after_deduplication": 1419,
+    "binary_counts": [
+      [
+        "Non-Incentive",
+        1150
+      ],
+      [
+        "Incentive",
+        269
+      ]
+    ],
+    "multiclass_counts": [
+      [
+        "Supplies",
+        81
+      ],
+      [
+        "Technical_assistance",
+        75
+      ],
+      [
+        "Direct_payment",
+        62
+      ],
+      [
+        "Fine",
+        23
+      ],
+      [
+        "Credit",
+        19
+      ],
+      [
+        "Tax_deduction",
+        9
+      ]
+    ],
+    "all_label_counts": [
+      [
+        "Non-Incentive",
+        1150
+      ],
+      [
+        "Supplies",
+        81
+      ],
+      [
+        "Technical_assistance",
+        75
+      ],
+      [
+        "Direct_payment",
+        62
+      ],
+      [
+        "Fine",
+        23
+      ],
+      [
+        "Credit",
+        19
+      ],
+      [
+        "Tax_deduction",
+        9
+      ]
+    ]
+  },
+  "binary": {
+    "task": "binary",
+    "n_examples": 1419,
+    "weighted_f1_mean": 0.8666208868562026,
+    "weighted_f1_sd": 0.009433417184909304,
+    "macro_f1_mean": 0.7814590891870794,
+    "macro_f1_sd": 0.01765537241468679,
+    "label_f1_mean": {
+      "Incentive": 0.6440389156755395,
+      "Non-Incentive": 0.9188792626986192
+    }
+  },
+  "multiclass": {
+    "task": "multiclass",
+    "n_examples": 269,
+    "weighted_f1_mean": 0.8798944874868194,
+    "weighted_f1_sd": 0.03397214458500236,
+    "macro_f1_mean": 0.8205492193359551,
+    "macro_f1_sd": 0.056741083956151336,
+    "label_f1_mean": {
+      "Credit": 0.7972222222222223,
+      "Direct_payment": 0.8585890003716091,
+      "Fine": 0.8933333333333333,
+      "Supplies": 0.9400925766200909,
+      "Tax_deduction": 0.5333333333333333,
+      "Technical_assistance": 0.9007248501351427
+    }
+  },
+  "notes": [
+    "This script uses the authors' public GitHub input JSON files.",
+    "It reproduces the 1,419-row merged dataset size reported in the paper,",
+    "but the class counts reconstructed from the repository inputs differ slightly",
+    "from the workshop paper's final counts (269 incentives here vs. 263 in the paper).",
+    "Modeling is a lightweight TF-IDF + LinearSVC baseline, not the paper's transformer-embedding pipeline."
+  ]
+}
