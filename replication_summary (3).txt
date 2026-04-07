@@ -1,0 +1,12 @@
+Lightweight Replication Summary
+=============================
+Rows after deduplication: 1419
+Binary counts: {'Non-Incentive': 1150, 'Incentive': 269}
+All label counts: {'Non-Incentive': 1150, 'Supplies': 81, 'Direct_payment': 62, 'Technical_assistance': 75, 'Fine': 23, 'Tax_deduction': 9, 'Credit': 19}
+
+Binary weighted F1 (mean ± sd): 86.7 ± 0.9
+Binary macro F1 (mean ± sd): 78.1 ± 1.8
+Multiclass weighted F1 (mean ± sd): 88.0 ± 3.4
+Multiclass macro F1 (mean ± sd): 82.1 ± 5.7
+
+Note: this is a lightweight offline baseline, not the paper's full transformer+SVM pipeline.
